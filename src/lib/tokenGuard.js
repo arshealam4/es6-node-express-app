@@ -6,6 +6,7 @@ const loggerName = '[TokenGuard]: ';
 const allowedList = [
   '/api/v1/users/login',
   '/api/v1/users/signup',
+  "/api/v1/users/user-list",
 ];
 
 class tokenVerify {
@@ -13,7 +14,7 @@ class tokenVerify {
 
   urlChecker = (url) => {
     for (const allowedUrl of allowedList) {
-      if (url === allowedUrl) {
+      if (url.indexOf(allowedUrl) > -1) {
         return true;
       }
     }
