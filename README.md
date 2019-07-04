@@ -1,4 +1,11 @@
 # es6-node-express-app
+
+## Description
+
+* In this app, we could do signup, login and get all user details with pagination, user details API is token protected, to get details we have to set token in header. 
+
+## Technology
+
 - [x] Node
 - [x] Express
 - [x] mongoose orm
